@@ -1,0 +1,16 @@
+torch>=2.2
+torchvision
+torchaudio
+numpy
+scikit-learn
+pandas
+scipy
+pyyaml
+tqdm
+pefile
+lief
+capstone
+einops
+matplotlib
+seaborn
+scikit-multiflow
