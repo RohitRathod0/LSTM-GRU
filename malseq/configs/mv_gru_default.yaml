@@ -1,0 +1,61 @@
+seed: 42
+task: binary
+static:
+  pe_fields: true
+  section_entropy: true
+  imports: true
+  android_manifest: false
+  hidden_dim: 128
+dynamic:
+  vocab_size: 4096
+  arg_vocab_size: 128
+  token_dim: 128
+  arg_dim: 16
+  window_len: 32
+  win_bi_gru_dim: 128
+  seq_gru_dim: 192
+  num_layers: 1
+  dropout: 0.2
+  bidirectional_windows: true
+  burstiness_feature: true
+fusion:
+  gate_hidden: 64
+  gate_dropout: 0.1
+heads:
+  classifier_hidden: 128
+  aux_nextcall_weight: 0.2
+training:
+  batch_size: 128
+  lr: 0.0003          # Changed from 3e-4 to explicit decimal
+  weight_decay: 0.0001  # Changed from 1e-4 to explicit decimal
+  epochs: 30
+  label_smoothing: 0.05
+  token_dropout_p: 0.1
+  cutmix_static_p: 0.3
+  prefix_curriculum: [16, 32, 64, 96]
+speculation:
+  beam_size: 3
+  steps: 8
+  aggregate: meanmax
+calibration:
+  temperature_init: 1.0
+  val_split: 0.1
+abstention:
+  entropy_threshold: 0.6
+  energy_margin: 1.0
+continual:
+  replay_size: 5000
+  lr: 0.0001
+  ewc_lambda: 50.0
+  update_every_days: 7
+drift:
+  psi_threshold: 0.25
+  kl_threshold: 0.15
+profiles:
+  edge:
+    bidirectional_windows: false
+    seq_gru_dim: 128
+    speculation: false
+  sandbox:
+    bidirectional_windows: true
+    speculation: true

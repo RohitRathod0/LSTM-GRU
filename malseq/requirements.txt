@@ -13,4 +13,4 @@ capstone
 einops
 matplotlib
 seaborn
-scikit-multiflow
+# scikit-multiflow  # optional; install manually after numpy if needed
