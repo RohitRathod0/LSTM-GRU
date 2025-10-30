@@ -1,0 +1,7 @@
+{
+  "model": "mlp",
+  "test_accuracy": 0.9956077684288511,
+  "val_accuracy": 0.9949194252599826,
+  "num_classes": 2,
+  "roc_auc": 0.9998510024357579
+}

@@ -1,0 +1,7 @@
+{
+  "model": "lstm",
+  "test_accuracy": 0.9883050219611579,
+  "val_accuracy": 0.9893625466380884,
+  "num_classes": 2,
+  "roc_auc": 0.9991348394190512
+}

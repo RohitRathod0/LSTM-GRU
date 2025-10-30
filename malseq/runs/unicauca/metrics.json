@@ -1,0 +1,24 @@
+{
+  "val_top1": 0.9968019816622301,
+  "test_top1": 0.9969264517401163,
+  "test_top5": 0.9999531696736665,
+  "test_top1_cal": 0.9969264517401163,
+  "test_top5_cal": 0.9999531696736665,
+  "num_classes": 13,
+  "temperature": 0.9047001004219055,
+  "label_map": {
+    "0": "DNS",
+    "1": "FacebookZero",
+    "2": "HTTP",
+    "3": "HTTP_Proxy",
+    "4": "IMAPS",
+    "5": "POPS",
+    "6": "QUIC",
+    "7": "SMBv23",
+    "8": "SMTPS",
+    "9": "STUN",
+    "10": "Skype",
+    "11": "TLS",
+    "12": "Unknown"
+  }
+}

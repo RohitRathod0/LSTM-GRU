@@ -1,0 +1,7 @@
+{
+  "model": "gru",
+  "test_accuracy": 0.9900513308990845,
+  "val_accuracy": 0.988489322854648,
+  "num_classes": 2,
+  "roc_auc": 0.9993276763482069
+}

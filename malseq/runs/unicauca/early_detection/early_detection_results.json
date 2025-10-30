@@ -1,0 +1,95 @@
+{
+  "config": {
+    "prefix_lengths": [
+      16,
+      32,
+      64,
+      96
+    ],
+    "padding_strategy": "zero",
+    "total_features": 209,
+    "temperature": 0.9047001004219055
+  },
+  "results": {
+    "prefix_16": {
+      "prefix_length": 16,
+      "features_used": "16/209",
+      "base_model": {
+        "accuracy": 0.4130262249827467,
+        "f1_macro": 0.12873547141131705,
+        "auroc_macro": 0.549705447913971,
+        "auroc_weighted": 0.6893857459917107,
+        "auprc_macro": 0.19425891778644308
+      },
+      "calibrated_model": {
+        "accuracy": 0.4130262249827467,
+        "f1_macro": 0.12873547141131705,
+        "auroc_macro": 0.5437888595473725,
+        "auroc_weighted": 0.6890871047593989,
+        "auprc_macro": 0.1938607901605449
+      }
+    },
+    "prefix_32": {
+      "prefix_length": 32,
+      "features_used": "32/209",
+      "base_model": {
+        "accuracy": 0.5521394064872326,
+        "f1_macro": 0.23151738808981395,
+        "auroc_macro": 0.6837302911404444,
+        "auroc_weighted": 0.7716207231400913,
+        "auprc_macro": 0.24905647681719692
+      },
+      "calibrated_model": {
+        "accuracy": 0.5521394064872326,
+        "f1_macro": 0.23151738808981395,
+        "auroc_macro": 0.6814689476651262,
+        "auroc_weighted": 0.7704368178625498,
+        "auprc_macro": 0.24988714128425157
+      }
+    },
+    "prefix_64": {
+      "prefix_length": 64,
+      "features_used": "64/209",
+      "base_model": {
+        "accuracy": 0.5396184560780835,
+        "f1_macro": 0.23260298043277863,
+        "auroc_macro": 0.6049676789597864,
+        "auroc_weighted": 0.70043416738686,
+        "auprc_macro": 0.26294784826456713
+      },
+      "calibrated_model": {
+        "accuracy": 0.5396184560780835,
+        "f1_macro": 0.23260298043277863,
+        "auroc_macro": 0.6044901963964493,
+        "auroc_weighted": 0.7021759647382791,
+        "auprc_macro": 0.26235829295763646
+      }
+    },
+    "prefix_96": {
+      "prefix_length": 96,
+      "features_used": "96/209",
+      "base_model": {
+        "accuracy": 0.590451542936015,
+        "f1_macro": 0.24165263029988765,
+        "auroc_macro": 0.6886788849431505,
+        "auroc_weighted": 0.8278610833302336,
+        "auprc_macro": 0.270545096773837
+      },
+      "calibrated_model": {
+        "accuracy": 0.590451542936015,
+        "f1_macro": 0.24165263029988765,
+        "auroc_macro": 0.6888276762813337,
+        "auroc_weighted": 0.8280955427158373,
+        "auprc_macro": 0.27066472139955683
+      }
+    },
+    "full_features": {
+      "prefix_length": 209,
+      "features_used": "209/209",
+      "calibrated_model": {
+        "accuracy": 0.9969264517401163,
+        "auroc_macro": 0.9470318081068826
+      }
+    }
+  }
+}
